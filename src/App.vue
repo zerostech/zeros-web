@@ -6,9 +6,16 @@
     </div>
     <div class="section pg2"></div>
     <div class="section">
-      <div class="slide">slide</div>
-      <div class="slide">slide</div>
-      <div class="slide">slide</div>
+      <div class="slide tm_slide" id="pg3_1">
+        <span class="slide_detail">
+          <a href="http://www.jianianle.com/" target="_blank">进入详情 ></a>
+        </span>
+      </div>
+      <div class="slide tm_slide" id="pg3_2">
+        <span class="slide_detail">
+          <a href="http://sj.qq.com/myapp/detail.htm?apkName=com.diisuu.huita" target="_blank">进入详情 ></a>
+        </span>
+      </div>
     </div>
     <div class="section pg4">
       <div id="bottom_mobile"><img src="../static/img/line_01.jpg"><span>15658132456</span></div>
@@ -41,9 +48,9 @@
     });
   });
 
-  setInterval(function () {
-    $.fn.fullpage.moveSlideRight();
-  }, 10000);
+    setInterval(function () {
+      $.fn.fullpage.moveSlideRight();
+    }, 10000);
 
   export default {
     name: 'app',
@@ -58,6 +65,10 @@
 
   #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background-color: white;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .section {
@@ -78,29 +89,62 @@
 
   div .pg4 {
     background-image: url(../static/img/pg_04.png);
-    background-size: auto;
+    background-size: contain;
     background-position: top;
   }
-  #bottom_mobile{
+
+  #bottom_mobile {
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 25%;
     height: 100%;
     width: 100%;
   }
-  #bottom_qq{
+
+  #bottom_qq {
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 55%;
     height: 100%;
     width: 100%;
   }
-  .pg4 div span{
+
+  .pg4 div span {
     color: white;
     font-size: 2.5vw;
     display: inline-block;
     position: absolute;
     margin: 0 auto;
     padding-left: 1%;
+    padding-top: 1%;
+  }
+
+  #pg3_1 {
+    background-image: url(../static/img/pg_03_01.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #pg3_2 {
+    background-image: url(../static/img/pg_03_02.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slide_detail {
+    width: 15%;
+    display: block;
+    position: relative;
+    left: 23%;
+    top: 24%;
+
+  }
+
+  .slide_detail a {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .slide_detail a:hover {
+    color: #ff0000;
   }
 </style>

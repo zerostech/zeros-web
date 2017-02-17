@@ -32,34 +32,65 @@ export default {
     top: 0;
     z-index: 999;
     padding: 0;
-    height: 4.25rem;
+    height: 9%;
     background: white;
     /*filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;*/
   }
 
   #logo {
     float: left;
-    /*width: 10%;*/
-    padding-left: 17%;
+    width: 10%;
+    padding-left: 20%;
   }
 
   #logo img {
     width: 75%;
     height: 75%;
     position: relative;
-    margin-top: 8%;
+    margin-top: 9%;
   }
 
   #nav {
-    width: 40%;
+    width: 60%;
+    height: 9%;
     position: absolute;
+    padding: 0;
     top: 0;
-    left: 30%;
+    left: 33%;
+  }
+
+  #nav ul {
+    /*height:35px;*/
+    display: inline;
+    width: 100%;
+  }
+
+  #nav ul li {
+    width: 12%;
+    height: 100%;
+    float: left;
+    list-style: none;
+    text-align: center;
+  }
+
+  #nav ul li a {
+    display: block;
+    /*text-indent: 30px;*/
+    max-width: 100%;
+    line-height: 4.25rem;
+    color: #000;
+    font-size: 1vw;
+    font-family: "Helvetica", "Tahoma", "Arial", "PingFang SC", "Microsoft JhengHei", "SimSun", "sans-serif";
+    font-weight: 500;
+  }
+
+  #nav ul li a:hover {
+    color: #ff0000;
   }
 
   #tel {
     float: right;
-    padding-right: 32%;
+    padding-right: 25%;
     /*width: 10%;*/
     /*height: 75%;*/
     /*padding-top: 10%;*/
@@ -72,37 +103,4 @@ export default {
     margin-top: 13%;
   }
 
-  a {
-    text-decoration: none;
-  }
-
-  #nav ul {
-    /*width:100%;*/
-    /*height:35px;*/
-    top: 0;
-    display: inline;
-  }
-
-  #nav ul li {
-    width: 20%;
-    height: 100%;
-    float: left;
-    list-style: none;
-    text-align: center;
-  }
-
-  #nav ul li a {
-    display: block;
-    /*text-indent: 30px;*/
-    height: 100%;
-    line-height: 4.25rem;
-    color: #000;
-    font-size: 1vw;
-    font-family: "Helvetica", "Tahoma", "Arial", "PingFang SC", "Microsoft JhengHei", "SimSun", "sans-serif";
-    font-weight: 500;
-  }
-
-  #nav ul li a:hover {
-    color: #ff0000;
-  }
 </style>
