@@ -18,8 +18,11 @@
       </div>
     </div>
     <div class="section pg4">
-      <div id="bottom_mobile"><img src="../static/img/line_01.jpg"><span>15658132456</span></div>
-      <div id="bottom_qq"><img src="../static/img/line_02.jpg"><span>617405347</span></div>
+      <div id="bottom_pg">
+      <div id="bottom_mobile"><img src="static/img/line_01.jpg"><span>15658132456</span></div>
+      <div id="bottom_qq"><img src="static/img/line_02.jpg"><span>617405347</span></div>
+      <div id="copyright">Copyright © 2017 ZerosTech. 当前呈现版本 0.0.9</div>
+      </div>
     </div>
   </div>
   <!--</div>-->
@@ -78,35 +81,35 @@
   }
 
   div .pg1 {
-    background-image: url(../static/img/pg_01.png);
+    background-image: url(/static/img/pg_01.png);
     /*background-size: cover;*/
   }
 
   div .pg2 {
-    background-image: url(../static/img/pg_02.png);
+    background-image: url(/static/img/pg_02.png);
 
   }
 
   div .pg4 {
-    background-image: url(../static/img/pg_04.png);
+    background-image: url(/static/img/pg_04.png);
     background-size: contain;
     background-position: top;
   }
 
   #bottom_mobile {
     position: absolute;
-    top: 75%;
+    top: 78%;
     left: 25%;
-    height: 100%;
-    width: 100%;
+    height: 25%;
+    width: 25%;
   }
 
   #bottom_qq {
     position: absolute;
-    top: 75%;
+    top: 78%;
     left: 55%;
-    height: 100%;
-    width: 100%;
+    height: 25%;
+    width: 25%;
   }
 
   .pg4 div span {
@@ -114,19 +117,19 @@
     font-size: 2.5vw;
     display: inline-block;
     position: absolute;
-    margin: 0 auto;
+    margin: auto auto;
     padding-left: 1%;
-    padding-top: 1%;
+    padding-top: 3%;
   }
 
   #pg3_1 {
-    background-image: url(../static/img/pg_03_01.png);
+    background-image: url(/static/img/pg_03_01.png);
     background-size: cover;
     background-position: center;
   }
 
   #pg3_2 {
-    background-image: url(../static/img/pg_03_02.png);
+    background-image: url(/static/img/pg_03_02.png);
     background-size: cover;
     background-position: center;
   }
@@ -146,5 +149,19 @@
   }
   .slide_detail a:hover {
     color: #ff0000;
+  }
+  #bottom_pg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #copyright{
+    width: 23%;
+    position: relative;
+    margin: 0 auto;
+    top:95%;
+    font-size: 1vw;
+    color: white;
+
   }
 </style>

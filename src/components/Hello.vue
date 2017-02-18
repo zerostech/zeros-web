@@ -1,7 +1,7 @@
 <template>
   <div id="top-bar">
     <div id="logo">
-      <img id="nav-logo" src="../../static/img/logo.png">
+      <img id="nav-logo" src="static/img/logo.png">
     </div>
     <div id="nav">
       <ul>
@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div id="tel">
-      <img src="../../static/img/tel_logo.png">
+      <a href="#page4"><img src="static/img/tel_logo.png"></a>
     </div>
   </div>
 </template>
