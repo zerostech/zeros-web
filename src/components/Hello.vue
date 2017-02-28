@@ -1,26 +1,28 @@
 <template>
   <div id="top-bar">
-    <div id="logo">
-      <img id="nav-logo" src="static/img/logo.png">
-    </div>
-    <div id="nav">
-      <ul>
-        <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
-        <li data-menuanchor="page2"><a href="#page2">团队名介绍</a></li>
-        <li data-menuanchor="page3"><a href="#page3">优秀项目</a></li>
-        <li data-menuanchor="page4"><a href="#page4">成功案例</a></li>
-      </ul>
-    </div>
-    <div id="tel">
-      <a href="#page4"><img src="static/img/tel_logo.png"></a>
+    <div id="head-bar">
+      <div id="logo">
+        <a href="../../index.html"><img id="nav-logo" src="static/img/logo.png"></a>
+      </div>
+      <div id="nav">
+        <ul>
+          <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+          <li data-menuanchor="page2"><a href="#page2">团队名介绍</a></li>
+          <li data-menuanchor="page3"><a href="#page3">优秀项目</a></li>
+          <li data-menuanchor="page4"><a href="#page4">成功案例</a></li>
+        </ul>
+      </div>
+      <div id="tel">
+        <a href="#page4"><img src="static/img/tel_logo.png"></a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'hello'
-}
+  export default {
+    name: 'hello'
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -29,45 +31,57 @@ export default {
   #top-bar {
     width: 100%;
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 999;
-    padding: 0;
-    height: 9%;
+    /*padding: 0;*/
+    height: 70px;
     background: white;
+    padding: 0;
     /*filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;*/
   }
-
+#head-bar{
+  width: 1226px;
+  height: 70px;
+  margin: 0px;
+  position: relative;
+  display: block;
+  /*background-color: red;*/
+  margin: 0 auto;
+  /*padding: 0;*/
+}
   #logo {
-    float: left;
-    width: 10%;
-    padding-left: 20%;
-  }
+    height: 50px;
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    margin-left: 200px;
 
-  #logo img {
-    width: 75%;
-    height: 75%;
-    position: relative;
-    margin-top: 9%;
+  }
+  #logo a{
+    height: inherit;
+  }
+  #logo a img {
+    height: inherit;
   }
 
   #nav {
-    width: 60%;
-    height: 9%;
+    width: 600px;
     position: absolute;
-    padding: 0;
+    padding-top: 25px;
     top: 0;
-    left: 33%;
+    left: 350px;
   }
 
   #nav ul {
-    /*height:35px;*/
-    display: inline;
-    width: 100%;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
   }
 
   #nav ul li {
-    width: 12%;
-    height: 100%;
+    width: 125px;
     float: left;
     list-style: none;
     text-align: center;
@@ -75,13 +89,8 @@ export default {
 
   #nav ul li a {
     display: block;
-    /*text-indent: 30px;*/
-    max-width: 100%;
-    line-height: 4.25rem;
     color: #000;
-    font-size: 1vw;
     font-family: "Helvetica", "Tahoma", "Arial", "PingFang SC", "Microsoft JhengHei", "SimSun", "sans-serif";
-    font-weight: 500;
   }
 
   #nav ul li a:hover {
@@ -89,18 +98,17 @@ export default {
   }
 
   #tel {
+    position: relative;
+    left: -250px;
+    padding-top: 10px;
     float: right;
-    padding-right: 25%;
-    /*width: 10%;*/
-    /*height: 75%;*/
-    /*padding-top: 10%;*/
+    display: block;
   }
 
   #tel img {
-    width: 75%;
-    height: 75%;
-    position: relative;
-    margin-top: 13%;
+
+    height: 50px;
+
   }
 
 </style>

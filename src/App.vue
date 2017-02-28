@@ -19,9 +19,9 @@
     </div>
     <div class="section pg4">
       <div id="bottom_pg">
-      <div id="bottom_mobile"><img src="static/img/line_01.jpg"><span>15658132456</span></div>
-      <div id="bottom_qq"><img src="static/img/line_02.jpg"><span>617405347</span></div>
-      <div id="copyright">Copyright © 2017 ZerosTech. 当前呈现版本 0.0.9</div>
+        <div id="bottom_mobile"><img src="static/img/line_01.jpg"><span>13482252334</span></div>
+        <div id="bottom_qq"><img src="static/img/line_02.jpg"><span>2608471194</span></div>
+        <div id="copyright">Copyright © 2017 ZerosTech. 当前呈现版本 0.0.9</div>
       </div>
     </div>
   </div>
@@ -51,9 +51,9 @@
     });
   });
 
-    setInterval(function () {
-      $.fn.fullpage.moveSlideRight();
-    }, 10000);
+  setInterval(function () {
+    $.fn.fullpage.moveSlideRight();
+  }, 10000);
 
   export default {
     name: 'app',
@@ -65,6 +65,14 @@
 
 <style>
   @import "assets/lib/css/jquery.fullPage.min.css";
+
+  * {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+  }
 
   #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background-color: white;
@@ -98,28 +106,29 @@
 
   #bottom_mobile {
     position: absolute;
-    top: 78%;
-    left: 25%;
-    height: 25%;
-    width: 25%;
+    top:70px;
+    /*top: 78%;*/
+    left: 160px;
+    /*height: 120px;*/
+    /*width: 25%;*/
   }
 
   #bottom_qq {
     position: absolute;
-    top: 78%;
-    left: 55%;
-    height: 25%;
-    width: 25%;
+    top: 70px;
+    left: 800px;
+    /*height: 25%;*/
+    /*width: 25%;*/
   }
 
   .pg4 div span {
     color: white;
-    font-size: 2.5vw;
+    font-size: 30px;
     display: inline-block;
     position: absolute;
-    margin: auto auto;
-    padding-left: 1%;
-    padding-top: 3%;
+    /*margin: auto auto;*/
+    padding-left: 10px;
+    padding-top: 15px;
   }
 
   #pg3_1 {
@@ -135,32 +144,39 @@
   }
 
   .slide_detail {
-    width: 15%;
+    width: 120px;
     display: block;
     position: relative;
-    left: 23%;
-    top: 24%;
+    left: 350px;
+    top: 180px;
 
   }
 
   .slide_detail a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 24px;
   }
+
   .slide_detail a:hover {
     color: #ff0000;
   }
-  #bottom_pg{
+
+  #bottom_pg {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 1226px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 550px;
+    /*background-color: red;*/
   }
-  #copyright{
-    width: 23%;
+
+  #copyright {
+    width: 400px;
     position: relative;
     margin: 0 auto;
-    top:95%;
-    font-size: 1vw;
+    top: 200px;
+    font-size: 14px;
     color: white;
 
   }
